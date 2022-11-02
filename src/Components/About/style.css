@@ -4,3 +4,15 @@
   font-family: "EB Garamond", serif;
   font-family: "Lobster", cursive;
 }
+
+.text-gradient {
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    112.81deg,
+    rgba(75, 87, 217, 0.52) 42.17%,
+    rgba(0, 236, 179, 0.52) 50.91%,
+    rgba(9, 214, 212, 0.52) 70.45%
+  );
+  -webkit-background-clip: text;
+  margin-bottom: 2.4rem;
+}
