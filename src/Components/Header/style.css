@@ -1,0 +1,12 @@
+.Header-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../Assets/Resume-bg-img.jpg");
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid rgb(102, 102, 102);
+}
