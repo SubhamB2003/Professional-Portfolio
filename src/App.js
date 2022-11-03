@@ -13,6 +13,8 @@ import Appbar from './Components/Navbar/Appbar';
 import About from './Components/About/About';
 import Resume from './Components/Resume/Resume';
 import Skill from './Components/Skills/Skill';
+import Footer from './Components/Footer/Footer';
+import Project from './Components/Projects/Project';
 
 
 
@@ -42,7 +44,9 @@ function App(props) {
       <Role toggleMode={toggleMode} />
       <About toggleMode={toggleMode} />
       <Resume toggleMode={toggleMode} />
-      <Skill />
+      <Skill toggleMode={toggleMode} />
+      <Project toggleMode={toggleMode} />
+      <Footer toggleMode={toggleMode} />
       <ScrollTop {...props}>
         <Fab size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />

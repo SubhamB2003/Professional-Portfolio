@@ -1,0 +1,9 @@
+.compHeight {
+  height: 120vh;
+}
+
+@media (max-width: 768px) {
+  .compHeight {
+    height: 250vh;
+  }
+}

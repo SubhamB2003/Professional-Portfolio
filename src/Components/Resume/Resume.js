@@ -27,7 +27,7 @@ function Resume(props) {
         },
         animation: {
             opacity: 1,
-            y: [-20, 20],
+            y: [-20, 0],
             x: 0,
             transition: {
                 // y: {
@@ -41,7 +41,7 @@ function Resume(props) {
     }
 
     return (
-        <Box className='container '>
+        <Box className='containerBox'>
             <Box className='section grid md:grid-cols-2 md:p-10 p-4'>
                 <Card className='flex justify-center align-middle bg-transparent' component={motion.div}
                     variants={loaderVarinats1}
