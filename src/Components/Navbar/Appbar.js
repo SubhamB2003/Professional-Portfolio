@@ -24,10 +24,10 @@ function Appbar(props) {
                     <a href="#about">
                         <Typography className='text-xl mt-10 font-bold font-serif'>About</Typography>
                     </a>
-                    <a href="#about">
+                    <a href="#skill">
                         <Typography className='text-xl mt-10 font-bold font-serif'>Skills</Typography>
                     </a>
-                    <a href="#about">
+                    <a href="#project">
                         <Typography className='text-xl mt-10 font-bold font-serif'>Projects</Typography>
                     </a>
                     {props.toggleMode ? <LightModeIcon className='text-xl mt-10 font-bold w-10 h-10' onClick={props.toggleModeHandler} /> : <DarkModeIcon className='text-xl mt-10 font-bold w-10 h-10' onClick={props.toggleModeHandler} />}

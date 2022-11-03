@@ -15,7 +15,7 @@
 }
 
 .containerBox .section:nth-child(1) {
-  background: url("../../Assets/Resume-bg-img.jpg");
+  background: url("../../Assets/bg-resume.png");
   background-size: cover;
   background-attachment: fixed;
 }

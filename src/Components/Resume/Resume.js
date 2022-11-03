@@ -27,7 +27,7 @@ function Resume(props) {
         },
         animation: {
             opacity: 1,
-            y: [-20, 20],
+            y: [-20, 0],
             x: 0,
             transition: {
                 // y: {

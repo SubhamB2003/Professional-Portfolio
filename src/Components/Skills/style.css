@@ -1,20 +1,9 @@
-.contain {
-  position: relative;
-  width: 100%;
-  height: 115vh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-  background-size: cover;
+.compHeight {
+  height: 120vh;
 }
 
-.contain .sec {
-  position: relative;
-  width: 100%;
-  height: 115vh;
-  background-size: cover;
-}
-
-.contain .sec:nth-child(1) {
-  background-size: cover;
-  background-attachment: fixed;
+@media (max-width: 768px) {
+  .compHeight {
+    height: 250vh;
+  }
 }
