@@ -10,30 +10,30 @@ import Feedback from '../Feedback/Feedback';
 
 function Footer(props) {
     return (
-        <Box className={props.toggleMode ? 'bg-black' : ''}>
-            <Box className='container relative flex-col bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 w-full rounded-tr-3xl rounded-tl-full' sx={{ height: "80vh" }}>
+        <Box className={props.toggleMode ? 'bg-gray-800' : ''}>
+            <Box className='relative flex-col bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 rounded-tr-3xl rounded-tl-full' sx={{ height: "80vh", width: "100%" }}>
                 <Box className='relative'>
-                    <Box className='grid md:grid-cols-2 px-10 md:py-6 md:mx-20 my-auto' sx={{ height: "70vh" }}>
+                    <Box className='grid xl:grid-cols-2 md:px-10 px-5 md:py-6 md:mx-20 my-auto' sx={{ height: "70vh" }}>
                         <Feedback />
-                        <Box className='relative w-40 md:w-72 mx-auto'>
-                            <img className='absolute mx-auto md:mt-8' src={require('../../Assets/contact-us-concept-illustration_114360-3146.png')} alt="" />
+                        <Box className='relative connect-pic mx-auto'>
+                            <img className='' src={require('../../Assets/contact-us.png')} alt="" />
                         </Box>
                     </Box>
                     <Divider className='hidden md:block' />
-                    <Box className='h-52 xl:h-0 bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900'>
-                        <Box className='md:mx-20 px-10 flex justify-between'>
+                    <Box className='bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900'>
+                        <Box className='md:mx-20 md:px-10 px-5 flex justify-between'>
                             <Box className='z-50'>
-                                <Typography className='text-black md:text-2xl text-base font-lobster text-left mt-40 md:mt-5'>Itz_subham</Typography>
+                                <Typography className='text-black md:text-2xl text-base font-lobster text-left my-10 md:mt-40 xl:mt-5'>Itz_subham</Typography>
                             </Box>
-                            <Box className='flex float-right right-0 md:space-x-8 space-x-5 mt-40 md:mt-5 z-50'>
-                                <GitHubIcon className='fill-black cursor-pointer hover:fill-black' />
-                                <FacebookIcon className='fill-black cursor-pointer hover:fill-blue-600' />
-                                <InstagramIcon className='fill-black cursor-pointer hover:fill-pink-800' />
-                                <TwitterIcon className='fill-black cursor-pointer hover:fill-cyan-500' />
+                            <Box className='flex float-right right-0 md:space-x-8 space-x-3 my-10 md:mt-40 xl:mt-5 z-50'>
+                                <a href='https://github.com/SubhamB2003' target="_blank" rel="noreferrer"><GitHubIcon className='fill-black cursor-pointer hover:fill-black' /></a>
+                                <a href='https://www.facebook.com/subham.bhattachariya.9' target="_blank" rel="noreferrer"><FacebookIcon className='fill-black cursor-pointer hover:fill-blue-600' /></a>
+                                <a href='https://www.instagram.com/itz_subham07/' target="_blank" rel="noreferrer"><InstagramIcon className='fill-black cursor-pointer hover:fill-pink-800' /></a>
+                                <a href='https://twitter.com/SubhamB82338312' target="_blank" rel="noreferrer"><TwitterIcon className='fill-black cursor-pointer hover:fill-cyan-500' /></a>
                             </Box>
                         </Box>
                     </Box>
-                    <Box className='absolute w-full bottom-20'>
+                    <Box className='absolute w-full xl:bottom-36 bottom-20'>
                         <svg className="absolute  waves" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"
                             viewBox="0 24 150 28" preserveAspectRatio="none" shapeRendering="auto">
                             <defs>

@@ -73,24 +73,25 @@ function Header(props) {
 
     return (
         <Box className="Header-img text-white">
-            <Box className='grid md:grid-cols-2 justify-between space-y-4 md:pt-28 pt-8'>
-                <Box className="md:pl-20 pl-6 pt-32 text-center banner">
-                    <Typography className="md:text-3xl text-xl font-serif">{"<h3>Welcome to my Portfolio</h3>"}</Typography>
+            {/* <Box className='grid md:grid-cols-2 justify-between space-y-4 md:pt-28 pt-8'> */}
+            <Box className='flex flex-col md:flex-row justify-evenly space-y-4 md:pt-28 pt-8'>
+                <Box className="md:pl-20 pl-6 pt-32 text-center md:max-w-2xl">
+                    <Typography className="xl:text-3xl md:text-2xl text-xl font-serif">{"<h3>Welcome to my Portfolio</h3>"}</Typography>
                     <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                <Typography className='md:text-6xl text-3xl font-serif pt-4 pb-4'>{`Hi! I'm a `} <span className='txt-rotate' ><span className="text-amber-400 wrap">{curText}</span></span></Typography>
+                                <Typography className='xl:text-6xl md:text-4xl text-3xl font-serif pt-4 pb-4 flex-wrap'>{`Hi! I'm a `} <span className='txt-rotate' ><span className="text-amber-400 wrap">{curText}</span></span></Typography>
                                 {/* <Typography className='md:text-4xl text-2xl font-serif'>{"<h2>Hi! I'm Subham Bhattacharjee</h2>"}</Typography> */}
                             </div>}
                     </TrackVisibility>
                 </Box>
 
-                <Box className='md:pl-48 pl-16'
+                <Box className='mx-auto'
                     component={motion.div}
                     variants={loaderVarinats}
                     initial="initial"
                     animate="animation">
-                    <img src={require("../../Assets/my-pic.png")} alt="" className='rounded-lg shadow-2xl md:w-80 w-60 shadow-black' />
+                    <img src={require("../../Assets/my-pic.png")} alt="" className='rounded-lg shadow-2xl md:w-80 w-60 shadow-black mx-auto' />
                 </Box>
             </Box>
         </Box >

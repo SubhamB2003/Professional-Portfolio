@@ -5,7 +5,7 @@ import './style.css';
 
 function About(props) {
     return (
-        <Box id="about" className={props.toggleMode ? 'bg-gray-900 text-white p-10 bg-about' : 'bg-gray-100 text-black p-10 bg-about'} sx={{ height: "125vh", width: "100%" }}>
+        <Box id="about" className={props.toggleMode ? 'bg-gray-900 text-white p-10 bg-about' : 'bg-gray-100 text-black p-10 bg-about'} sx={{ width: "100%" }}>
             {/* <Typography className='text-center text-7xl font-lobster font-bold text-transparent bg-clip-text bg-gradient-to-b from-blue-700 via-blue-800 to-gray-900'>About <span className=''>Me</span></Typography> */}
             <Typography className='text-center md:text-7xl text-4xl font-lobster font-bold text-gradient'>About Me</Typography>
             <Paper className={props.toggleMode ? 'grid md:grid-cols-2 md:mt-16 mt-5 md:p-10 p-4 bg-transparent' : 'grid md:grid-cols-2 md:mt-16 mt-5 md:p-10 p-4 bg-black'}>

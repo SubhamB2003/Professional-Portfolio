@@ -6,6 +6,8 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import './style.css'
+
 
 function Appbar(props) {
 
@@ -69,13 +71,13 @@ function Appbar(props) {
                     <Box className="sm:block hidden">
                         <Box className="flex items-center space-x-6">
                             <a href="#about">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>About</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>About</Typography>
                             </a>
                             <a href="#skill">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>Skills</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>Skills</Typography>
                             </a>
                             <a href="#project">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>Projects</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>Projects</Typography>
                             </a>
                             {props.toggleMode ? <LightModeIcon onClick={props.toggleModeHandler} /> : <DarkModeIcon onClick={props.toggleModeHandler} />}
                         </Box>

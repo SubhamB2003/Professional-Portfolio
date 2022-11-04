@@ -1,3 +1,7 @@
+.connect-pic {
+  width: 75vh;
+}
+
 .waves {
   position: absolute;
   width: 100%;
@@ -54,5 +58,11 @@
   }
   h1 {
     font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .connect-pic {
+    width: auto;
   }
 }

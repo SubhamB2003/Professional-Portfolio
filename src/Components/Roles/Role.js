@@ -28,7 +28,7 @@ function Role(props) {
     };
 
     return (
-        <Box className={props.toggleMode ? 'bg-gradient-to-b from-black via-purple-900 to-slate-900' : 'bg-gradient-to-b from-black via-slate-400 to-gray-100'} sx={{ width: "100%", height: "60vh" }}>
+        <Box className={props.toggleMode ? 'bg-gradient-to-b from-black via-purple-900 to-slate-900 h-96' : 'bg-gradient-to-b from-black via-slate-400 to-gray-100 h-96'} sx={{ width: "100%" }}>
             <Card className={props.toggleMode ? 'absolute shadow-lg shadow-indigo-500 md:left-10 md:right-10 left-0 right-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-indigo-500 rounded-full p-4' :
                 'bg-gradient-to-bl from-indigo-900 via-indigo-400 to-indigo-900 shadow-xl shadow-indigo-400 absolute md:left-10 md:right-10 left-0 right-0 rounded-full p-4'}
                 sx={{ top: "40rem", height: "25rem" }}>
