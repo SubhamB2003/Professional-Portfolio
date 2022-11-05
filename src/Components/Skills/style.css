@@ -1,9 +1,28 @@
-.compHeight {
+.h-100 {
   height: 120vh;
+  width: 100%;
+}
+
+.img-pics {
+  padding: 20px;
+  height: 200px;
 }
 
 @media (max-width: 768px) {
-  .compHeight {
-    height: 250vh;
+  .h-100 {
+    height: 100vh;
+  }
+  .img-pics {
+    width: auto;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 668px) {
+  .h-100 {
+    height: 100vh;
+  }
+  .img-pics {
+    width: auto;
   }
 }

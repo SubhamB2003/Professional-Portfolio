@@ -10,3 +10,21 @@
 .txt-rotate > .wrap {
   border-right: 0.08em solid rgb(102, 102, 102);
 }
+
+@media (max-width: 1000px) {
+  .Header-img {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .Header-img {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .Header-img {
+    height: 100vh;
+  }
+}

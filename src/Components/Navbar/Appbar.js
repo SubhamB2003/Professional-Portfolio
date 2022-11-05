@@ -6,6 +6,8 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 
+import './style.css'
+
 
 function Appbar(props) {
 
@@ -41,7 +43,7 @@ function Appbar(props) {
     return (
         <>
             <Box className="flex justify-between bg-transparent py-6 md:px-16 px-2" sx={{ width: "100%", position: "fixed", zIndex: "99999999" }}>
-                <Box className={!props.toggleMode ? "flex items-center md:px-6 px-4 py-2 absolute text-white bg-black" :
+                <Box className={!props.toggleMode ? "flex items-center md:px-6 px-4 py-2 absolute text-white" :
                     "flex items-center md:px-6 px-4 py-2 text-white absolute"} sx={{
                         backdropFilter: "blur(2rem)", border: "1px solid hsla(0,0%,100%,.1)", borderRadius: "1.6rem"
                     }}
@@ -62,20 +64,20 @@ function Appbar(props) {
                     </a>
                 </Box>
 
-                <Box className={!props.toggleMode ? "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 absolute text-white bg-black" :
+                <Box className={!props.toggleMode ? "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 absolute text-white" :
                     "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 text-white absolute"} sx={{
                         backdropFilter: "blur(2rem)", border: "1px solid hsla(0,0%,100%,.1)", borderRadius: "1.6rem"
                     }}>
                     <Box className="sm:block hidden">
                         <Box className="flex items-center space-x-6">
                             <a href="#about">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>About</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>About</Typography>
                             </a>
                             <a href="#skill">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>Skills</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>Skills</Typography>
                             </a>
                             <a href="#project">
-                                <Typography className='text-lg font-bold font-serif hover:underline hover:decoration-yellow-400'>Projects</Typography>
+                                <Typography className='text-lg font-bold font-serif under'>Projects</Typography>
                             </a>
                             {props.toggleMode ? <LightModeIcon onClick={props.toggleModeHandler} /> : <DarkModeIcon onClick={props.toggleModeHandler} />}
                         </Box>
