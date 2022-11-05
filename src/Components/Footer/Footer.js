@@ -16,7 +16,7 @@ function Footer(props) {
                     <Box className='grid xl:grid-cols-2 md:px-10 px-5 md:py-6 md:mx-20 my-auto' sx={{ height: "70vh" }}>
                         <Feedback />
                         <Box className='relative connect-pic mx-auto'>
-                            <img className='' src={require('../../Assets/contact-us.png')} alt="" />
+                            <img className='' src={require('../../Assets/contact-us.png')} alt="Footer-img" />
                         </Box>
                     </Box>
                     <Divider className='hidden md:block' />

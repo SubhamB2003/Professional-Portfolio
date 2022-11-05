@@ -17,7 +17,7 @@ function Skill(props) {
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 5
+            items: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -31,38 +31,39 @@ function Skill(props) {
 
     return (
         <Box id="skill" className={props.toggleMode ? 'bg-gray-800' : ''}>
-            <Box className={props.toggleMode ? 'bg-violet-800 h-100 rounded-l-full' : 'bg-violet-500 h-100 rounded-l-full'}>
-                <Typography className='md:text-6xl text-2xl font-lobster text-center font-bold text-yellow-400 md:pt-12 pt-12'>Tech Stack Know</Typography>
+            <Box className='h-100 rounded-l-full'
+                sx={{ backgroundImage: "linear-gradient(90deg, rgba(128,0,255,1) 0%, rgba(94,85,209,1) 27%, rgba(150,49,189,1) 100%, rgba(190,58,241,1) 100%, rgba(222,0,255,1) 100%)" }}>
+                <Typography className='md:text-7xl text-4xl font-lobster text-center font-bold text-yellow-400 md:pt-12 pt-12'>Tech Stack Know</Typography>
                 <Box className='shadow-lg shadow-zinc-700 bg-transparent rounded-3xl p-4 xl:mx-20 xl:top-36 border border-black xl:mt-32 md:mt-80 mt-24'
                     sx={{ height: "25rem" }}>
                     {/* <Typography className='text-center px-4 text-white font-serif pt-1'>You can now view professional-portfolio in the browser.</Typography> */}
                     {/*  infinite={true}  */}
                     <Carousel responsive={responsive} className="md:mx-10 mt-16 ">
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/Mern.png")} Title={"Mern Stack"} data={60} bg_color={"bg-green-400"} text_color={"text-white"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/Metarial_UI.png")} Title={"MUI"} data={70} bg_color={"bg-blue-800"} text_color={"text-white"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/Tailwind_Icon.png")} Title={"Tailwind Css"} data={80} bg_color={"bg-white"} text_color={"text-blue-800"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/Bootstrap_Icon.png")} Title={"Bootstrap"} data={80} bg_color={"bg-violet-600"} text_color={"text-white"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/typescript.webp")} Title={"Typescript"} data={40} bg_color={"bg-gray-700"} text_color={"text-white"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/javascript_icon.png")} Title={"Javascript"} data={80} bg_color={"bg-yellow-300"} text_color={"text-white"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/c_icon.png")} Title={"C"} data={70} bg_color={"bg-white"} text_color={"text-black"} />
                         </Box>
-                        <Box>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/java_icon.png")} Title={"Java"} data={70} bg_color={"bg-purple-300"} text_color={"text-white"} />
                         </Box>
-                        <Box className='pr-10'>
+                        <Box className='mx-10'>
                             <SkillCard image={require("../../Assets/git_github.png")} Title={"Git Github"} data={60} bg_color={"bg-orange-400"} text_color={"text-white"} />
                         </Box>
                     </Carousel>

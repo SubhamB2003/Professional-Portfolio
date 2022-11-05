@@ -43,7 +43,7 @@ function Appbar(props) {
     return (
         <>
             <Box className="flex justify-between bg-transparent py-6 md:px-16 px-2" sx={{ width: "100%", position: "fixed", zIndex: "99999999" }}>
-                <Box className={!props.toggleMode ? "flex items-center md:px-6 px-4 py-2 absolute text-white bg-black" :
+                <Box className={!props.toggleMode ? "flex items-center md:px-6 px-4 py-2 absolute text-white" :
                     "flex items-center md:px-6 px-4 py-2 text-white absolute"} sx={{
                         backdropFilter: "blur(2rem)", border: "1px solid hsla(0,0%,100%,.1)", borderRadius: "1.6rem"
                     }}
@@ -64,7 +64,7 @@ function Appbar(props) {
                     </a>
                 </Box>
 
-                <Box className={!props.toggleMode ? "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 absolute text-white bg-black" :
+                <Box className={!props.toggleMode ? "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 absolute text-white" :
                     "md:px-12 pl-4 md:py-4 py-3 md:right-16 right-1 text-white absolute"} sx={{
                         backdropFilter: "blur(2rem)", border: "1px solid hsla(0,0%,100%,.1)", borderRadius: "1.6rem"
                     }}>

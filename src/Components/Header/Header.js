@@ -20,19 +20,17 @@ function Header(props) {
 
     const loaderVarinats = {
         initial: {
-            scale: 0,
+            opacity: 0,
         },
         animation: {
-            scale: 1,
+            opacity: 1,
             y: [-0, 40],
             x: 0,
             transition: {
                 y: {
                     yoyo: Infinity,
-                    delay: 2,
                     duration: 2,
                 },
-                duration: 2
             }
         }
     }
@@ -81,7 +79,6 @@ function Header(props) {
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                 <Typography className='xl:text-6xl md:text-4xl text-3xl font-serif pt-4 pb-4 flex-wrap'>{`Hi! I'm a `} <span className='txt-rotate' ><span className="text-amber-400 wrap">{curText}</span></span></Typography>
-                                {/* <Typography className='md:text-4xl text-2xl font-serif'>{"<h2>Hi! I'm Subham Bhattacharjee</h2>"}</Typography> */}
                             </div>}
                     </TrackVisibility>
                 </Box>
@@ -90,8 +87,9 @@ function Header(props) {
                     component={motion.div}
                     variants={loaderVarinats}
                     initial="initial"
-                    animate="animation">
-                    <img src={require("../../Assets/my-pic.png")} alt="" className='rounded-lg shadow-2xl md:w-80 w-60 shadow-black mx-auto' />
+                    animate="animation"
+                >
+                    <img src={require("../../Assets/my-pic.png")} alt="my_pic" className='rounded-lg shadow-2xl md:w-80 w-60 shadow-black mx-auto' />
                 </Box>
             </Box>
         </Box >

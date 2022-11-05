@@ -38,9 +38,23 @@
   height: 100vh;
 }
 
+.text_size {
+  font-size: 1rem;
+}
+
+.img_size {
+  width: 11rem;
+}
+
 @media (max-width: 960px) {
   .bg-img-height {
     height: 50vh;
+  }
+  .text_size {
+    font-size: 12px;
+  }
+  .img_size {
+    width: 8rem;
   }
 }
 
@@ -48,4 +62,11 @@
   .bg-img-height {
     height: 40vh;
   }
+  .text_size {
+    font-size: 10px;
+  }
+  .img_size {
+    width: 6rem;
+  }
+  
 }

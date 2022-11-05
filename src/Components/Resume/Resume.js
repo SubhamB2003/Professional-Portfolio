@@ -47,7 +47,7 @@ function Resume(props) {
                     variants={loaderVarinats1}
                     initial="initial"
                     animate="animation">
-                    <img className='bg-img-height' src={require("../../Assets/resume-img.png")} alt="My_Pic" />
+                    <img className='bg-img-height' src={require("../../Assets/resume-img.png")} alt="Resume_pic" />
                 </Box>
 
                 <Box className='flex flex-col bg-transparent' component={motion.div}
@@ -56,16 +56,17 @@ function Resume(props) {
                     animate="animation">
                     <Box className='absolute md:ml-24'>
                         <Box className='img-over'>
-                            <img className='w-28 md:w-44 md:mt-16 mt-auto' src={require("../../Assets/resume-sec-top.png")} alt="My_Pic" />
-                            <Box className='overlay md:py-6 py-2 md:px-8 text-center'>
-                                <Typography className='text-black font-semibold font-serif text-xs md:text-base'>Hey,</Typography>
-                                <Typography className='text-black font-semibold font-serif text-xs md:text-base'>Wanna check </Typography>
-                                <Typography className='text-black font-semibold font-serif text-xs md:text-base'>my resume</Typography>
+                            <img className='img_size xl:mt-16 mt-auto' src={require("../../Assets/resume-sec-top.png")} alt="Cloud_img" />
+                            <Box className='overlay xl:py-6 py-2 xl:px-8 md:px-3 text-center'>
+                                <Typography className='text-black font-semibold font-serif text_size'>Hey,</Typography>
+                                <Typography className='text-black font-semibold font-serif text_size'>Wanna check </Typography>
+                                <Typography className='text-black font-semibold font-serif text_size'>my resume</Typography>
                             </Box>
                         </Box>
                     </Box>
                     <Box className='mx-auto md:my-auto'>
-                        <motion.img drag={true} dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} className='w-80 md:w-96' src={require("../../Assets/Vector_Robot_3.png")} alt="My_Pic" />
+                        <motion.img drag={true} dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }} className='w-80 xl:w-96 md:w-60'
+                            src={require("../../Assets/Vector_Robot_3.png")} alt="Robot_vector" />
                         <Box className='ml-8 md:ml-14'>
                             <a href={ResumeFile} download="Resume.pdf">
                                 <Button className={props.toggleMode ? 'lg:w-64 text-sm h-12 shadow-lg shadow-white bg-black text-white font-serif hover:bg-gray-800'
